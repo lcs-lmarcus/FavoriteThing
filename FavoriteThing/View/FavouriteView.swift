@@ -9,18 +9,18 @@ import SwiftUI
 
 struct FavouriteView: View {
     
-    let providedthing: FavouriteThing
+    let providedThing: FavouriteThing
     
     var body: some View {
         VStack (alignment: .leading) {
-            Text(providedthing.name)
+            Text(providedThing.name)
                 .font(.largeTitle)
-            Text (providedthing.description)
+            Text(providedThing.description)
         }
     }
 }
 #Preview {
-    FavouriteView(providedthing: Cheesecake)
+    FavouriteView(providedThing: cheesecake)
 }
     
 

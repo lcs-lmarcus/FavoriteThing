@@ -13,7 +13,7 @@ struct FavouriteListView: View {
     var body: some View {
         NavigationStack {
             List(Things) { currentThing in
-                FavouriteView(providedthing: currentThing)
+                FavouriteView(providedThing: currentThing)
             }
             .navigationTitle("Favourite Thing")
         }
