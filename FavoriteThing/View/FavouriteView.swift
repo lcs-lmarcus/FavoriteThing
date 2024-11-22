@@ -13,14 +13,20 @@ struct FavouriteView: View {
     
     var body: some View {
         VStack (alignment: .leading) {
-            Text(providedThing.name)
-                .font(.largeTitle)
+            HStack {
+                Image(providedThing.image)
+                    .resizable()
+                    .frame(width: 70, height: 70)
+                Text(providedThing.name)
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+            }
             Text(providedThing.description)
         }
     }
 }
 #Preview {
-    FavouriteView(providedThing: cheesecake)
+    FavouriteView(providedThing: lavaCake)
 }
     
 
