@@ -18,10 +18,10 @@ struct FavouriteView: View {
                     .resizable()
                     .frame(width: 70, height: 70)
                 Text(providedThing.name)
-                    .font(.largeTitle)
+                    .font(.title)
                     .fontWeight(.semibold)
             }
-            Text(providedThing.description)
+//            Text(providedThing.description)
         }
     }
 }
